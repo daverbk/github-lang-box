@@ -24,7 +24,7 @@ jobs:
           cache: pnpm
 
       - name: Update
-        run: pnpm dlx github-lang-box@2
+        run: pnpm build && pnpm start
         env:
           GH_USERNAME: daverbk
           GIST_ID: 06863f60f17afdf067d5dd2d565b10f7
