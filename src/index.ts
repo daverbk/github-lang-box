@@ -38,13 +38,13 @@ const generateStatsLines = async (
         ([language, percentage]) => [
             language,
             percentage,
-            Math.ceil((percentage * 30) / 100),
+            Math.ceil((percentage * 36) / 100),
         ]
     )
 
     const lines = langBarData.map(([language, percent, bars]) => {
         const languageLabel = truncate(`${language} `, 12).padStart(12)
-        const barGraph = '█'.repeat(bars).padEnd(30, '░')
+        const barGraph = '█'.repeat(bars).padEnd(20, '░')
         const percentageLabel = `${percent.toFixed(2)}%`.padStart(6)
         return `${languageLabel}${barGraph} ${percentageLabel}`
     })
