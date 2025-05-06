@@ -2,7 +2,7 @@ import { Octokit } from '@octokit/rest'
 import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
 import { env } from './env.js'
 
-const { GIST_ID, GH_TOKEN, GH_USERNAME, EXCLUDE, EXCLUDE_REPO, DESCRIPTION } =
+const { GIST_ID, GH_TOKEN, GH_USERNAME, EXCLUDE, EXCLUDE_REPO } =
     env
 
 const octokit = new Octokit({
@@ -98,7 +98,6 @@ const updateGist = async (lines: string) => {
     try {
         await octokit.gists.update({
             gist_id: GIST_ID,
-            description: DESCRIPTION || '💻 Programming Language Stats',
             files: {
                 [filename]: {
                     content: lines,

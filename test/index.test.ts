@@ -46,7 +46,6 @@ describe('Lang box basics', () => {
             GH_USERNAME: 'octocat',
             EXCLUDE: undefined,
             EXCLUDE_REPO: undefined,
-            DESCRIPTION: undefined,
         })
     })
 

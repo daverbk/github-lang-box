@@ -2,7 +2,6 @@
 
 exports[`Lang box basics > should exclude languages set by \`EXCLUDE\` 1`] = `
 {
-  "description": "💻 Programming Language Stats",
   "files": {
     "gistfile1.txt": {
       "content": " TypeScript ████████████████░░░░░░░░░░░░░░░░░░░░ 43.52%
@@ -20,7 +19,6 @@ Objective-C █░░░░░░░░░░░░░░░░░░░░░�
 
 exports[`Lang box basics > should updates the Gist with the expected string 1`] = `
 {
-  "description": "💻 Programming Language Stats",
   "files": {
     "gistfile1.txt": {
       "content": " TypeScript ████████████░░░░░░░░░░░░░░░░░░░░░░░░ 31.21%

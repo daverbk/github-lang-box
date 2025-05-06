@@ -17,7 +17,7 @@
 ## ✨ Enhancements
 
 - 🔑 Uses `/user/repos` endpoint to fetch all repositories (including private ones)
-- 🎨 Supports custom descriptions, language exclusions, and repository filtering
+- 🎨 Supports language exclusions, and repository filtering
 - 📦 Published to npm with binary support for easy use via `npx` or `pnpx`
 - ✅ Updated dependencies and completely rewritten in TypeScript
 
@@ -48,7 +48,6 @@ github-lang-box [options]
 | GH_USERNAME  | Your GitHub username                                                                                      |
 | EXCLUDE      | (Optional) Comma-separated list of languages to exclude <br> Example: `Jupyter Notebook,CSS,TeX,PHP`      |
 | EXCLUDE_REPO | (Optional) Comma-separated list of repositories to exclude <br> Example: `username/repo1,username/repo2`  |
-| DESCRIPTION  | (Optional) Custom description for the gist                                                                |
 
 ### GitHub Action Setup
 
@@ -98,7 +97,6 @@ jobs:
           # EXCLUDE_REPO: username/repo1,username/repo2
           EXCLUDE: ${{ vars.EXCLUDE }}
           EXCLUDE_REPO: ${{ vars.EXCLUDE_REPO }}
-          DESCRIPTION: Your custom description
 ```
 
 #### Add Repository Secrets and Variables

@@ -12,8 +12,7 @@ const envSchema = z.object({
     GH_USERNAME: z.string(),
     GH_TOKEN: z.string(),
     EXCLUDE: commaSeparatedString,
-    EXCLUDE_REPO: commaSeparatedString,
-    DESCRIPTION: z.string().optional(),
+    EXCLUDE_REPO: commaSeparatedString
 })
 
 export const env = envSchema.parse(process.env)

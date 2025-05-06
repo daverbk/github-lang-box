@@ -46,7 +46,6 @@ github-lang-box [options]
 | GH_USERNAME  | 你的 GitHub 用户名                                                                                    |
 | EXCLUDE      | （可选）要排除的语言，使用**英文**逗号分隔 <br> 示例：`Jupyter Notebook,CSS,TeX,PHP`                  |
 | EXCLUDE_REPO | （可选）要排除的存储库，使用**英文**逗号分隔 <br> 示例：`username/repo1,username/repo2`               |
-| DESCRIPTION  | （可选）Gist 的自定义描述                                                                             |
 
 ### GitHub Action 设置
 
