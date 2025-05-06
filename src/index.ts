@@ -2,8 +2,7 @@ import { Octokit } from '@octokit/rest'
 import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
 import { env } from './env.js'
 
-const { GIST_ID, GH_TOKEN, GH_USERNAME, EXCLUDE, EXCLUDE_REPO } =
-    env
+const { GIST_ID, GH_TOKEN, GH_USERNAME, EXCLUDE, EXCLUDE_REPO } = env
 
 const octokit = new Octokit({
     auth: `token ${GH_TOKEN}`,
